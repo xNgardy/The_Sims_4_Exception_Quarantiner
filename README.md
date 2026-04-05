@@ -1,3 +1,5 @@
+WORK-IN-PROGRESS
+
 # Sims 4 Mod Quarantine
 
 A small Windows desktop tool that helps you isolate (quarantine) likely-problematic Sims 4 mods by reading an exception report and moving matching `.package` / `.ts4script` files out of your Mods folder.
