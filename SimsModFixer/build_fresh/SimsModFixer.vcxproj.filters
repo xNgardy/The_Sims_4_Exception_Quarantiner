@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\build_fresh\SimsModFixer_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\src\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\build_fresh\SimsModFixer_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\build_fresh\SimsModFixer_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\build_fresh\SimsModFixer_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\src\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\pisu\GitHub\Sims-4-Exception-Quarantiner\SimsModFixer\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5D62A956-C435-32FD-9694-6A963510AC36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{50C29037-7C86-3FD2-93A4-B15A2FCA1AA2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
