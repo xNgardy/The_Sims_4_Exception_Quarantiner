@@ -1,3 +1,5 @@
+WORK-IN-PROGRESS
+
 # Sims 4 Mod Quarantine
 
 A small Qt desktop app for The Sims 4 that reads exception reports, finds likely-problematic mods, and moves suspected files into a quarantine folder.
