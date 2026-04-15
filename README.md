@@ -129,14 +129,21 @@ Run:
 open SimsModFixer/build_macos/Debug/SimsModFixer.app
 ```
 
-## Pushing To GitHub
-If you want to publish the project, a simple flow is:
+## Download Ready-Made Packages
+If you do not want to build the app yourself:
+
+- Check the repo's **Actions** tab for packaged build artifacts
+- Or download files from **Releases** if a tagged release has been published
+
+The GitHub workflow is set up to produce:
+- a Windows `.zip` package containing the `.exe` and required Qt files
+- a macOS `.dmg` package
+
+To create those packages on GitHub, push a tag such as:
 
 ```powershell
-git status
-git add README.md SimsModFixer
-git commit -m "Improve quarantine workflow and documentation"
-git push
+git tag v1.0.0
+git push origin v1.0.0
 ```
 
 ## Future Ideas
