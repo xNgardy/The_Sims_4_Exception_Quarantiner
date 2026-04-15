@@ -13,6 +13,12 @@ It is designed for cases where a Better Exceptions report or another crash/excep
 ## Credit
 - Huge thanks to TwistedMexi for Better Exceptions, which is often the report source that makes this tool useful in the first place.
 
+## Download Ready-Made App
+
+If you do not want to build the project yourself, download the newest packaged version here:
+
+[Latest Release](https://github.com/xNgardy/The_Sims_4_Exception_Quarantiner/releases/latest)
+
 ## Features
 - Select your Sims 4 `Mods` folder
 - Select or drag-and-drop an exception file (`.txt` or `.html`)
@@ -44,13 +50,13 @@ If it detects a mod folder such as:
 .../The Sims 4/Mods/ExampleMod
 ```
 
-it will move files into:
+It will move files into:
 
 ```text
 .../The Sims 4/Mods/Quarantine_Mods/ExampleMod/...
 ```
 
-This keeps the original folder structure so restoring files later is easier.
+This keeps the original folder structure, so restoring files later is easier.
 
 ## How To Use
 1. Launch the app.
@@ -58,7 +64,7 @@ This keeps the original folder structure so restoring files later is easier.
 3. Choose an exception file, or drag and drop one onto the window.
 4. Leave `Preview only (dry run, do not move files)` checked if you want to inspect the result first.
 5. Click `Analyze And Quarantine`.
-6. Review the popup summary.
+6. Review the pop-up summary.
 7. If you used dry run first, uncheck preview mode and run again to actually move files.
 8. If needed, click `Restore Quarantined Files` to move files back.
 
@@ -128,16 +134,6 @@ Run:
 ```bash
 open SimsModFixer/build_macos/Debug/SimsModFixer.app
 ```
-
-## Download Ready-Made Packages
-If you do not want to build the app yourself:
-
-- Check the repo's **Actions** tab for packaged build artifacts
-- Or download files from **Releases** if a tagged release has been published
-
-The GitHub workflow is set up to produce:
-- a Windows `.zip` package containing the `.exe` and required Qt files
-- a macOS `.dmg` package
 
 ## Future Ideas
 - Export scan results to a text file
