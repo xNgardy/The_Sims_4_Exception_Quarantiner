@@ -4,16 +4,19 @@ WORK-IN-PROGRESS
 
 A small Qt desktop app for The Sims 4 that reads exception reports, finds likely-problematic mods, and moves suspected files into a quarantine folder.
 
-It is designed for cases where a Better Exceptions report or another crash/exception file points to a mod, but finding that mod manually is annoying because filenames and folders do not always match exactly.
+This project is basically for players like me who are really lazy about manually digging through the Mods folder every time an exception happens. If a report already gives a clue, this tool tries to do the annoying part for you.
+
+It is designed for cases where a Better Exceptions report or another crash/exception file points to a mod, but finding that mod manually is tiresome because filenames and folders do not always match exactly.
 
 > Not affiliated with EA / Maxis. Use at your own risk and keep backups of your Mods folder.
+
+## Credit
+- Huge thanks to TwistedMexi for Better Exceptions, which is often the report source that makes this tool useful in the first place.
 
 ## Features
 - Select your Sims 4 `Mods` folder
 - Select or drag-and-drop an exception file (`.txt` or `.html`)
 - Detect exact mod filenames like `.package` and `.ts4script`
-- Detect Better Exceptions style folder clues like `.\WickedWhims_v187.16\...`
-- Match custom folder names such as `Wicked Whims` against clue names such as `WickedWhims_v187.16`
 - Move suspected files into `Mods/Quarantine_Mods`
 - Preserve relative folder structure inside quarantine
 - Preview changes with a dry run before moving anything
@@ -25,7 +28,6 @@ The app analyzes the selected exception file and looks for two kinds of clues:
 1. Exact filenames
    Example: `SomeMod.package` or `ExampleMod.ts4script`
 2. Mod folder hints
-   Example: `.\WickedWhims_v187.16\turbolib2\events\interactions.py`
 
 It then scans your `Mods` directory, finds matching files or likely matching mod folders, and moves the suspected files into a quarantine area.
 
@@ -39,13 +41,13 @@ The app creates this folder inside your Mods directory:
 If it detects a mod folder such as:
 
 ```text
-.../The Sims 4/Mods/Wicked Whims
+.../The Sims 4/Mods/ExampleMod
 ```
 
 it will move files into:
 
 ```text
-.../The Sims 4/Mods/Quarantine_Mods/Wicked Whims/...
+.../The Sims 4/Mods/Quarantine_Mods/ExampleMod/...
 ```
 
 This keeps the original folder structure so restoring files later is easier.

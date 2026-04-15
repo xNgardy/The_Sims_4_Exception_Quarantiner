@@ -29,6 +29,7 @@ struct AnalysisResult {
 };
 
 QString normalizeModHint(const QString &value) {
+
     QString normalized = value.toLower();
     QString result;
     result.reserve(normalized.size());
@@ -43,15 +44,18 @@ QString normalizeModHint(const QString &value) {
 }
 
 QString cleanPath(const QString &path) {
+
     return QDir::cleanPath(QDir::fromNativeSeparators(path));
 }
 
 bool isSupportedExceptionFile(const QString &filePath) {
+
     const QString lowerPath = filePath.toLower();
-    return lowerPath.endsWith(".txt") || lowerPath.endsWith(".html");
+    return lowerPath.endsWith(".txt") || lowerPath.endsWith(".html"); //for Exception files.
 }
 
 AnalysisResult analyzeSuspects(const QString &modsPath, const QString &exceptionPath) {
+
     AnalysisResult result;
 
     QDir modsDir(modsPath);
