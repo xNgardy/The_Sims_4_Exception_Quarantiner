@@ -139,13 +139,6 @@ The GitHub workflow is set up to produce:
 - a Windows `.zip` package containing the `.exe` and required Qt files
 - a macOS `.dmg` package
 
-To create those packages on GitHub, push a tag such as:
-
-```powershell
-git tag v1.0.0
-git push origin v1.0.0
-```
-
 ## Future Ideas
 - Export scan results to a text file
 - Add a clickable list of detected files before moving
