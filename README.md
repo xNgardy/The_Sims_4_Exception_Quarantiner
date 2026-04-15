@@ -58,7 +58,7 @@ This keeps the original folder structure so restoring files later is easier.
 3. Choose an exception file, or drag and drop one onto the window.
 4. Leave `Preview only (dry run, do not move files)` checked if you want to inspect the result first.
 5. Click `Analyze And Quarantine`.
-6. Review the popup summary.
+6. Review the pop-up summary.
 7. If you used dry run first, uncheck preview mode and run again to actually move files.
 8. If needed, click `Restore Quarantined Files` to move files back.
 
@@ -129,18 +129,7 @@ Run:
 open SimsModFixer/build_macos/Debug/SimsModFixer.app
 ```
 
-## Pushing To GitHub
-If you want to publish the project, a simple flow is:
-
-```powershell
-git status
-git add README.md SimsModFixer
-git commit -m "Improve quarantine workflow and documentation"
-git push
-```
-
 ## Future Ideas
 - Export scan results to a text file
 - Add a clickable list of detected files before moving
 - Support more Sims 4 report formats
-- Add packaged releases for Windows and macOS
